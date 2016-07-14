@@ -1,0 +1,8 @@
+{
+    "planet_old" : "C:\\Users\\gascu\\Downloads\\somalia-latest.osm.pbf",
+    "planet_new":"C:\\Users\\gascu\\Downloads\\new_planet.o5m",
+    "osmupdate_path" : "C:\\Users\\gascu\\Documents\\OSM\\osmconvert.exe",
+    "osmfilter_path": "",
+    "osmfilter_params": "",
+    "out_path": "C:\\Users\\gascu\\Downloads"
+}
