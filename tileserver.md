@@ -74,6 +74,13 @@ Extract the archive to the `~/bin` and add it to your path.
 export PATH=$PATH:$HOME/bin
 ```
 
+## Clone OSMUtils repo
+```
+cd ~/src
+git clone https://github.com/daveb1034/OSMUtils.git
+cd OSMUtils
+```
+
 ## Import Data
 
 This section details the steps needed to obtain and import the required data.
@@ -81,14 +88,13 @@ This section details the steps needed to obtain and import the required data.
 ### Import External Sources
 This process only needs to be run the once and will import files external to OpenStreetMap.
 
-Obtain the Natural Earth data as sqlite database.
+Obtain the Natural Earth data as sqlite database. Then run the clean-natural-earth script
 
 #### TODO the clean script needs to have a parameter set and be included in the repo, or the preporcessed sqlite needs to be included.
 ```
-mkdir ~/src
-cd ~/src
+
+cd ~/src/OSMUtils/src
 wget http://naciscdn.org/naturalearth/packages/natural_earth_vector.sqlite.zip
 unzip natural_earth_vector.sqlite.zip
-cd packages
 ./clean-natural-earth.sh
 ```
