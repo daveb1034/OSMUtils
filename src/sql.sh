@@ -3,8 +3,8 @@ set -o errexit
 set -o pipefail
 set -o nounset
 
-readonly DB_HOST=$DB_PORT_5432_TCP_ADDR
-readonly DB_PORT=$DB_PORT_5432_TCP_PORT
+readonly DB_HOST=127.0.0.1
+readonly DB_PORT=5432
 
 readonly OSM_DB=${OSM_DB:-osm}
 readonly OSM_USER=${OSM_USER:-osm}

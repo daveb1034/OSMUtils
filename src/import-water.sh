@@ -3,9 +3,9 @@ set -o errexit
 set -o pipefail
 set -o nounset
 
-readonly IMPORT_DATA_DIR=${IMPORT_DATA_DIR:-/data/import}
-readonly WATER_POLYGONS_FILE="$IMPORT_DATA_DIR/water_polygons.shp"
-readonly SIMPLIFIED_WATER_POLYGONS_FILE="$IMPORT_DATA_DIR/simplified_water_polygons.shp"
+#readonly IMPORT_DATA_DIR=${IMPORT_DATA_DIR:-/data/import}
+readonly WATER_POLYGONS_FILE="./water_polygons.shp"
+readonly SIMPLIFIED_WATER_POLYGONS_FILE="./simplified_water_polygons.shp"
 
 source sql.sh
 

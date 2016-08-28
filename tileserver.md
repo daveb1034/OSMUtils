@@ -17,6 +17,7 @@ The import is significantly faster than using [osm2pgsql](https://github.com/ope
 sudo apt-get install libboost-all-dev subversion git-core tar unzip wget bzip2 build-essential autoconf libtool libxml2-dev libgeos-dev libgeos++-dev 
 libpq-dev libbz2-dev libproj-dev munin-node munin libprotobuf-c0-dev protobuf-c-compiler libfreetype6-dev libpng12-dev libtiff5-dev libicu-dev 
 libgdal-dev libcairo-dev libcairomm-1.0-dev apache2 apache2-dev libagg-dev liblua5.2-dev ttf-unifont lua5.1 liblua5.1-dev libgeotiff-epsg node-carto sqlite3
+gdal-bin
 ```
 
 ## Install postgresql / postgis
@@ -25,10 +26,10 @@ Get the relevant packages from the Ubuntu package manager
 ```
 sudo apt-get install postgresql postgresql-contrib postgis postgresql-9.5-postgis-2.2 pgadmin3
 ```
-Create a database
+Create a database and create a user called osm
 ```
 sudo -u postgres -i
-createuser username # answer yes for superuser (although this isn't strictly necessary)
+createuser osm
 createdb -E UTF8 -O osm osm
 exit
 ```
@@ -37,7 +38,7 @@ Create a Ubuntu username called osm and set a password
 sudo useradd -m osm
 sudo passwd osm
 ```
-Setup PostGIS and hstore on the PostgreSQL database
+Setup PostGIS and hstore on the PostgreSQL database and set the osm user password to osm.
 ```
 sudo -u postgres psql
 \c osm
@@ -45,6 +46,7 @@ CREATE EXTENSION postgis;
 CREATE EXTENSION hstore;
 ALTER TABLE geometry_columns OWNER TO osm;
 ALTER TABLE spatial_ref_sys OWNER TO osm;
+ALTER USER osm WITH PASSWORD 'osm';
 \q
 ```
 
@@ -81,20 +83,21 @@ git clone https://github.com/daveb1034/OSMUtils.git
 cd OSMUtils
 ```
 
-## Import Data
+## Import External Data
+
+Scripts and data used here have been modified from the [osm2vectortiles process](https://github.com/osm2vectortiles/osm2vectortiles/tree/master/src/import-external).
+
 
 This section details the steps needed to obtain and import the required data.
 
-### Import External Sources
 This process only needs to be run the once and will import files external to OpenStreetMap.
 
-Obtain the Natural Earth data as sqlite database. Then run the clean-natural-earth script
+The import script downloads natural earth data and water polygons from openstreetmap.
+The natural earth data is cleaned and then imported.
 
-#### TODO the clean script needs to have a parameter set and be included in the repo, or the preporcessed sqlite needs to be included.
+All data is loaded into the public schema of the postgis database in EPSG:3857 by default.
+This will potentially be altered in future to use 4326 and possibly 3395.
+
 ```
-
-cd ~/src/OSMUtils/src
-wget http://naciscdn.org/naturalearth/packages/natural_earth_vector.sqlite.zip
-unzip natural_earth_vector.sqlite.zip
-./clean-natural-earth.sh
+./import.sh
 ```

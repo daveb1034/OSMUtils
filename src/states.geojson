@@ -1,720 +1,2555 @@
-
-
-
-
-<!DOCTYPE html>
-<html lang="en" class=" is-copy-enabled">
-  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
-    <meta charset='utf-8'>
-
-    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/frameworks-badbefc5f73f92d77589e93964990bd487b5c03927ced2726daea3271d3c3c1d.css" integrity="sha256-utvvxfc/ktd1iek5ZJkL1Ie1wDknztJyba6jJx08PB0=" media="all" rel="stylesheet" />
-    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github-a1702a81aa936020431db7f17815644067eed0a97a72d4557910480aa017d8bc.css" integrity="sha256-oXAqgaqTYCBDHbfxeBVkQGfu0Kl6ctRVeRBICqAX2Lw=" media="all" rel="stylesheet" />
-    
-    
-    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/site-13d2d4e0ca168621dd92689cf755d926d9a4507ba4138b8cc4cfbc38ce2984ed.css" integrity="sha256-E9LU4MoWhiHdkmic91XZJtmkUHukE4uMxM+8OM4phO0=" media="all" rel="stylesheet" />
-    
-    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/system-fonts-d60dee4b68e3a38b01c0389551a0e38f04acd897ec85592f405d045ee853b3d1.css" integrity="sha256-1g3uS2jjo4sBwDiVUaDjjwSs2JfshVkvQF0EXuhTs9E=" media="all" rel="stylesheet" />
-
-    <link as="script" href="https://assets-cdn.github.com/assets/frameworks-386c3263a86b4f071b0f13a0cf369bcf73def558aade9e1cf6b871d4edf74e11.js" rel="preload" />
-    
-    <link as="script" href="https://assets-cdn.github.com/assets/github-1260c89ebd3078ea1f3f2f252b4f006878a5a02682f531d305c47999d7633e2d.js" rel="preload" />
-
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="Content-Language" content="en">
-    <meta name="viewport" content="width=device-width">
-    
-    
-    <title>osm2vectortiles/states.geojson at master · osm2vectortiles/osm2vectortiles · GitHub</title>
-    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
-    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
-    <meta property="fb:app_id" content="1401488693436528">
-
-      <meta content="https://avatars0.githubusercontent.com/u/15348018?v=3&amp;s=400" name="twitter:image:src" /><meta content="@github" name="twitter:site" /><meta content="summary" name="twitter:card" /><meta content="osm2vectortiles/osm2vectortiles" name="twitter:title" /><meta content="osm2vectortiles - Generating global vector tiles from OSM Planet" name="twitter:description" />
-      <meta content="https://avatars0.githubusercontent.com/u/15348018?v=3&amp;s=400" property="og:image" /><meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="osm2vectortiles/osm2vectortiles" property="og:title" /><meta content="https://github.com/osm2vectortiles/osm2vectortiles" property="og:url" /><meta content="osm2vectortiles - Generating global vector tiles from OSM Planet" property="og:description" />
-      <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
-    <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
-    <link rel="assets" href="https://assets-cdn.github.com/">
-    
-    <meta name="pjax-timeout" content="1000">
-    
-
-    <meta name="msapplication-TileImage" content="/windows-tile.png">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="selected-link" value="repo_source" data-pjax-transient>
-
-    <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
-<meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
-    <meta name="google-analytics" content="UA-3769691-2">
-
-<meta content="collector.githubapp.com" name="octolytics-host" /><meta content="github" name="octolytics-app-id" /><meta content="5B7D5D8E:6DB2:450A651:578AA4CC" name="octolytics-dimension-request_id" />
-<meta content="/&lt;user-name&gt;/&lt;repo-name&gt;/blob/show" data-pjax-transient="true" name="analytics-location" />
-
-
-
-  <meta class="js-ga-set" name="dimension1" content="Logged Out">
-
-
-
-        <meta name="hostname" content="github.com">
-    <meta name="user-login" content="">
-
-        <meta name="expected-hostname" content="github.com">
-      <meta name="js-proxy-site-detection-payload" content="M2YyMjVkYTNjZTRlZTljNWM4ZDQ3NDliNjk0YjFhMTJiN2RkZDRhNWZlMzkxMzYwYTk0MGM2YWE4N2FlOTRjMXx7InJlbW90ZV9hZGRyZXNzIjoiOTEuMTI1LjkzLjE0MiIsInJlcXVlc3RfaWQiOiI1QjdENUQ4RTo2REIyOjQ1MEE2NTE6NTc4QUE0Q0MiLCJ0aW1lc3RhbXAiOjE0Njg3MDM5NDh9">
-
-
-      <link rel="mask-icon" href="https://assets-cdn.github.com/pinned-octocat.svg" color="#4078c0">
-      <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
-
-    <meta name="html-safe-nonce" content="4b7bd361f90002bdd0dbdf44b062d48819aefc1c">
-    <meta content="1a020fb9364bf2ba0a1d82dc6cded52f66588489" name="form-nonce" />
-
-    <meta http-equiv="x-pjax-version" content="33ffd9acc0ca86634be048531c44d6ed">
-    
-
-      
-  <meta name="description" content="osm2vectortiles - Generating global vector tiles from OSM Planet">
-  <meta name="go-import" content="github.com/osm2vectortiles/osm2vectortiles git https://github.com/osm2vectortiles/osm2vectortiles.git">
-
-  <meta content="15348018" name="octolytics-dimension-user_id" /><meta content="osm2vectortiles" name="octolytics-dimension-user_login" /><meta content="42047400" name="octolytics-dimension-repository_id" /><meta content="osm2vectortiles/osm2vectortiles" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="42047400" name="octolytics-dimension-repository_network_root_id" /><meta content="osm2vectortiles/osm2vectortiles" name="octolytics-dimension-repository_network_root_nwo" />
-  <link href="https://github.com/osm2vectortiles/osm2vectortiles/commits/master.atom" rel="alternate" title="Recent Commits to osm2vectortiles:master" type="application/atom+xml">
-
-
-      <link rel="canonical" href="https://github.com/osm2vectortiles/osm2vectortiles/blob/master/src/import-external/states.geojson" data-pjax-transient>
-  </head>
-
-
-  <body class="logged-out   env-production linux vis-public page-blob">
-    <div id="js-pjax-loader-bar" class="pjax-loader-bar"></div>
-    <a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
-
-    
-    
-    
-
-
-
-          <header class="site-header js-details-container" role="banner">
-  <div class="container-responsive">
-    <a class="header-logo-invertocat" href="https://github.com/" aria-label="Homepage" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
-      <svg aria-hidden="true" class="octicon octicon-mark-github" height="32" version="1.1" viewBox="0 0 16 16" width="32"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
-    </a>
-
-    <button class="btn-link right site-header-toggle js-details-target" type="button" aria-label="Toggle navigation">
-      <svg aria-hidden="true" class="octicon octicon-three-bars" height="24" version="1.1" viewBox="0 0 12 16" width="18"><path d="M11.41 9H.59C0 9 0 8.59 0 8c0-.59 0-1 .59-1H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1h.01zm0-4H.59C0 5 0 4.59 0 4c0-.59 0-1 .59-1H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1h.01zM.59 11H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1H.59C0 13 0 12.59 0 12c0-.59 0-1 .59-1z"></path></svg>
-    </button>
-
-    <div class="site-header-menu">
-      <nav class="site-header-nav site-header-nav-main">
-        <a href="/personal" class="js-selected-navigation-item nav-item nav-item-personal" data-ga-click="Header, click, Nav menu - item:personal" data-selected-links="/personal /personal">
-          Personal
-</a>        <a href="/open-source" class="js-selected-navigation-item nav-item nav-item-opensource" data-ga-click="Header, click, Nav menu - item:opensource" data-selected-links="/open-source /open-source">
-          Open source
-</a>        <a href="/business" class="js-selected-navigation-item nav-item nav-item-business" data-ga-click="Header, click, Nav menu - item:business" data-selected-links="/business /business/features /business/customers /business">
-          Business
-</a>        <a href="/explore" class="js-selected-navigation-item nav-item nav-item-explore" data-ga-click="Header, click, Nav menu - item:explore" data-selected-links="/explore /trending /trending/developers /integrations /integrations/feature/code /integrations/feature/collaborate /integrations/feature/ship /explore">
-          Explore
-</a>      </nav>
-
-      <div class="site-header-actions">
-            <a class="btn btn-primary site-header-actions-btn" href="/join?source=header-repo" data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">Sign up</a>
-          <a class="btn site-header-actions-btn mr-2" href="/login?return_to=%2Fosm2vectortiles%2Fosm2vectortiles%2Fblob%2Fmaster%2Fsrc%2Fimport-external%2Fstates.geojson" data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">Sign in</a>
-      </div>
-
-        <nav class="site-header-nav site-header-nav-secondary">
-          <a class="nav-item" href="/pricing">Pricing</a>
-          <a class="nav-item" href="/blog">Blog</a>
-          <a class="nav-item" href="https://help.github.com">Support</a>
-          <a class="nav-item header-search-link" href="https://github.com/search">Search GitHub</a>
-              <div class="header-search scoped-search site-scoped-search js-site-search" role="search">
-  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/osm2vectortiles/osm2vectortiles/search" class="js-site-search-form" data-scoped-search-url="/osm2vectortiles/osm2vectortiles/search" data-unscoped-search-url="/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
-    <label class="form-control header-search-wrapper js-chromeless-input-container">
-      <div class="header-search-scope">This repository</div>
-      <input type="text"
-        class="form-control header-search-input js-site-search-focus js-site-search-field is-clearable"
-        data-hotkey="s"
-        name="q"
-        placeholder="Search"
-        aria-label="Search this repository"
-        data-unscoped-placeholder="Search GitHub"
-        data-scoped-placeholder="Search"
-        tabindex="1"
-        autocapitalize="off">
-    </label>
-</form></div>
-
-        </nav>
-    </div>
-  </div>
-</header>
-
-
-
-    <div id="start-of-content" class="accessibility-aid"></div>
-
-      <div id="js-flash-container">
-</div>
-
-
-    <div role="main">
-        <div itemscope itemtype="http://schema.org/SoftwareSourceCode">
-    <div id="js-repo-pjax-container" data-pjax-container>
-      
-<div class="pagehead repohead instapaper_ignore readability-menu experiment-repo-nav">
-  <div class="container repohead-details-container">
-
-    
-
-<ul class="pagehead-actions">
-
-  <li>
-      <a href="/login?return_to=%2Fosm2vectortiles%2Fosm2vectortiles"
-    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
-    aria-label="You must be signed in to watch a repository" rel="nofollow">
-    <svg aria-hidden="true" class="octicon octicon-eye" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"></path></svg>
-    Watch
-  </a>
-  <a class="social-count" href="/osm2vectortiles/osm2vectortiles/watchers">
-    33
-  </a>
-
-  </li>
-
-  <li>
-      <a href="/login?return_to=%2Fosm2vectortiles%2Fosm2vectortiles"
-    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
-    aria-label="You must be signed in to star a repository" rel="nofollow">
-    <svg aria-hidden="true" class="octicon octicon-star" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"></path></svg>
-    Star
-  </a>
-
-    <a class="social-count js-social-count" href="/osm2vectortiles/osm2vectortiles/stargazers">
-      211
-    </a>
-
-  </li>
-
-  <li>
-      <a href="/login?return_to=%2Fosm2vectortiles%2Fosm2vectortiles"
-        class="btn btn-sm btn-with-count tooltipped tooltipped-n"
-        aria-label="You must be signed in to fork a repository" rel="nofollow">
-        <svg aria-hidden="true" class="octicon octicon-repo-forked" height="16" version="1.1" viewBox="0 0 10 16" width="10"><path d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg>
-        Fork
-      </a>
-
-    <a href="/osm2vectortiles/osm2vectortiles/network" class="social-count">
-      50
-    </a>
-  </li>
-</ul>
-
-    <h1 class="public ">
-  <svg aria-hidden="true" class="octicon octicon-repo" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"></path></svg>
-  <span class="author" itemprop="author"><a href="/osm2vectortiles" class="url fn" rel="author">osm2vectortiles</a></span><!--
---><span class="path-divider">/</span><!--
---><strong itemprop="name"><a href="/osm2vectortiles/osm2vectortiles" data-pjax="#js-repo-pjax-container">osm2vectortiles</a></strong>
-
-</h1>
-
-  </div>
-  <div class="container">
-    
-<nav class="reponav js-repo-nav js-sidenav-container-pjax"
-     itemscope
-     itemtype="http://schema.org/BreadcrumbList"
-     role="navigation"
-     data-pjax="#js-repo-pjax-container">
-
-  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
-    <a href="/osm2vectortiles/osm2vectortiles" aria-selected="true" class="js-selected-navigation-item selected reponav-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches /osm2vectortiles/osm2vectortiles" itemprop="url">
-      <svg aria-hidden="true" class="octicon octicon-code" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M9.5 3L8 4.5 11.5 8 8 11.5 9.5 13 14 8 9.5 3zm-5 0L0 8l4.5 5L6 11.5 2.5 8 6 4.5 4.5 3z"></path></svg>
-      <span itemprop="name">Code</span>
-      <meta itemprop="position" content="1">
-</a>  </span>
-
-    <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
-      <a href="/osm2vectortiles/osm2vectortiles/issues" class="js-selected-navigation-item reponav-item" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /osm2vectortiles/osm2vectortiles/issues" itemprop="url">
-        <svg aria-hidden="true" class="octicon octicon-issue-opened" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg>
-        <span itemprop="name">Issues</span>
-        <span class="counter">15</span>
-        <meta itemprop="position" content="2">
-</a>    </span>
-
-  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
-    <a href="/osm2vectortiles/osm2vectortiles/pulls" class="js-selected-navigation-item reponav-item" data-hotkey="g p" data-selected-links="repo_pulls /osm2vectortiles/osm2vectortiles/pulls" itemprop="url">
-      <svg aria-hidden="true" class="octicon octicon-git-pull-request" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg>
-      <span itemprop="name">Pull requests</span>
-      <span class="counter">4</span>
-      <meta itemprop="position" content="3">
-</a>  </span>
-
-    <a href="/osm2vectortiles/osm2vectortiles/wiki" class="js-selected-navigation-item reponav-item" data-hotkey="g w" data-selected-links="repo_wiki /osm2vectortiles/osm2vectortiles/wiki">
-      <svg aria-hidden="true" class="octicon octicon-book" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M3 5h4v1H3V5zm0 3h4V7H3v1zm0 2h4V9H3v1zm11-5h-4v1h4V5zm0 2h-4v1h4V7zm0 2h-4v1h4V9zm2-6v9c0 .55-.45 1-1 1H9.5l-1 1-1-1H2c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h5.5l1 1 1-1H15c.55 0 1 .45 1 1zm-8 .5L7.5 3H2v9h6V3.5zm7-.5H9.5l-.5.5V12h6V3z"></path></svg>
-      Wiki
-</a>
-
-  <a href="/osm2vectortiles/osm2vectortiles/pulse" class="js-selected-navigation-item reponav-item" data-selected-links="pulse /osm2vectortiles/osm2vectortiles/pulse">
-    <svg aria-hidden="true" class="octicon octicon-pulse" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M11.5 8L8.8 5.4 6.6 8.5 5.5 1.6 2.38 8H0v2h3.6l.9-1.8.9 5.4L9 8.5l1.6 1.5H14V8z"></path></svg>
-    Pulse
-</a>
-  <a href="/osm2vectortiles/osm2vectortiles/graphs" class="js-selected-navigation-item reponav-item" data-selected-links="repo_graphs repo_contributors /osm2vectortiles/osm2vectortiles/graphs">
-    <svg aria-hidden="true" class="octicon octicon-graph" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M16 14v1H0V0h1v14h15zM5 13H3V8h2v5zm4 0H7V3h2v10zm4 0h-2V6h2v7z"></path></svg>
-    Graphs
-</a>
-
-</nav>
-
-  </div>
-</div>
-
-<div class="container new-discussion-timeline experiment-repo-nav">
-  <div class="repository-content">
-
-    
-
-<a href="/osm2vectortiles/osm2vectortiles/blob/9090f93a838e52f358daf4c9e5b9ce48f2a7dbc1/src/import-external/states.geojson" class="hidden js-permalink-shortcut" data-hotkey="y">Permalink</a>
-
-<!-- blob contrib key: blob_contributors:v21:d4a709355e9df75a20001f37b83420c3 -->
-
-<div class="file-navigation js-zeroclipboard-container">
-  
-<div class="select-menu branch-select-menu js-menu-container js-select-menu left">
-  <button class="btn btn-sm select-menu-button js-menu-target css-truncate" data-hotkey="w"
-    title="master"
-    type="button" aria-label="Switch branches or tags" tabindex="0" aria-haspopup="true">
-    <i>Branch:</i>
-    <span class="js-select-button css-truncate-target">master</span>
-  </button>
-
-  <div class="select-menu-modal-holder js-menu-content js-navigation-container" data-pjax aria-hidden="true">
-
-    <div class="select-menu-modal">
-      <div class="select-menu-header">
-        <svg aria-label="Close" class="octicon octicon-x js-menu-close" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"></path></svg>
-        <span class="select-menu-title">Switch branches/tags</span>
-      </div>
-
-      <div class="select-menu-filters">
-        <div class="select-menu-text-filter">
-          <input type="text" aria-label="Filter branches/tags" id="context-commitish-filter-field" class="form-control js-filterable-field js-navigation-enable" placeholder="Filter branches/tags">
-        </div>
-        <div class="select-menu-tabs">
-          <ul>
-            <li class="select-menu-tab">
-              <a href="#" data-tab-filter="branches" data-filter-placeholder="Filter branches/tags" class="js-select-menu-tab" role="tab">Branches</a>
-            </li>
-            <li class="select-menu-tab">
-              <a href="#" data-tab-filter="tags" data-filter-placeholder="Find a tag…" class="js-select-menu-tab" role="tab">Tags</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="branches" role="menu">
-
-        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
-
-
-            <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/osm2vectortiles/osm2vectortiles/blob/feature/motorway_junction/src/import-external/states.geojson"
-               data-name="feature/motorway_junction"
-               data-skip-pjax="true"
-               rel="nofollow">
-              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
-              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text" title="feature/motorway_junction">
-                feature/motorway_junction
-              </span>
-            </a>
-            <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/osm2vectortiles/osm2vectortiles/blob/feature/website-changes/src/import-external/states.geojson"
-               data-name="feature/website-changes"
-               data-skip-pjax="true"
-               rel="nofollow">
-              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
-              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text" title="feature/website-changes">
-                feature/website-changes
-              </span>
-            </a>
-            <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/osm2vectortiles/osm2vectortiles/blob/gh-pages/src/import-external/states.geojson"
-               data-name="gh-pages"
-               data-skip-pjax="true"
-               rel="nofollow">
-              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
-              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text" title="gh-pages">
-                gh-pages
-              </span>
-            </a>
-            <a class="select-menu-item js-navigation-item js-navigation-open selected"
-               href="/osm2vectortiles/osm2vectortiles/blob/master/src/import-external/states.geojson"
-               data-name="master"
-               data-skip-pjax="true"
-               rel="nofollow">
-              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
-              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text" title="master">
-                master
-              </span>
-            </a>
-            <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/osm2vectortiles/osm2vectortiles/blob/qa_rip/src/import-external/states.geojson"
-               data-name="qa_rip"
-               data-skip-pjax="true"
-               rel="nofollow">
-              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
-              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text" title="qa_rip">
-                qa_rip
-              </span>
-            </a>
-        </div>
-
-          <div class="select-menu-no-results">Nothing to show</div>
-      </div>
-
-      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="tags">
-        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
-
-
-            <a class="select-menu-item js-navigation-item js-navigation-open "
-              href="/osm2vectortiles/osm2vectortiles/tree/v2.1/src/import-external/states.geojson"
-              data-name="v2.1"
-              data-skip-pjax="true"
-              rel="nofollow">
-              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
-              <span class="select-menu-item-text css-truncate-target" title="v2.1">
-                v2.1
-              </span>
-            </a>
-            <a class="select-menu-item js-navigation-item js-navigation-open "
-              href="/osm2vectortiles/osm2vectortiles/tree/v2.0/src/import-external/states.geojson"
-              data-name="v2.0"
-              data-skip-pjax="true"
-              rel="nofollow">
-              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
-              <span class="select-menu-item-text css-truncate-target" title="v2.0">
-                v2.0
-              </span>
-            </a>
-            <a class="select-menu-item js-navigation-item js-navigation-open "
-              href="/osm2vectortiles/osm2vectortiles/tree/v1.5/src/import-external/states.geojson"
-              data-name="v1.5"
-              data-skip-pjax="true"
-              rel="nofollow">
-              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
-              <span class="select-menu-item-text css-truncate-target" title="v1.5">
-                v1.5
-              </span>
-            </a>
-            <a class="select-menu-item js-navigation-item js-navigation-open "
-              href="/osm2vectortiles/osm2vectortiles/tree/v1.4.2/src/import-external/states.geojson"
-              data-name="v1.4.2"
-              data-skip-pjax="true"
-              rel="nofollow">
-              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
-              <span class="select-menu-item-text css-truncate-target" title="v1.4.2">
-                v1.4.2
-              </span>
-            </a>
-            <a class="select-menu-item js-navigation-item js-navigation-open "
-              href="/osm2vectortiles/osm2vectortiles/tree/v1.4.1/src/import-external/states.geojson"
-              data-name="v1.4.1"
-              data-skip-pjax="true"
-              rel="nofollow">
-              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
-              <span class="select-menu-item-text css-truncate-target" title="v1.4.1">
-                v1.4.1
-              </span>
-            </a>
-            <a class="select-menu-item js-navigation-item js-navigation-open "
-              href="/osm2vectortiles/osm2vectortiles/tree/v1.4/src/import-external/states.geojson"
-              data-name="v1.4"
-              data-skip-pjax="true"
-              rel="nofollow">
-              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
-              <span class="select-menu-item-text css-truncate-target" title="v1.4">
-                v1.4
-              </span>
-            </a>
-            <a class="select-menu-item js-navigation-item js-navigation-open "
-              href="/osm2vectortiles/osm2vectortiles/tree/v1.3/src/import-external/states.geojson"
-              data-name="v1.3"
-              data-skip-pjax="true"
-              rel="nofollow">
-              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
-              <span class="select-menu-item-text css-truncate-target" title="v1.3">
-                v1.3
-              </span>
-            </a>
-            <a class="select-menu-item js-navigation-item js-navigation-open "
-              href="/osm2vectortiles/osm2vectortiles/tree/v1.2/src/import-external/states.geojson"
-              data-name="v1.2"
-              data-skip-pjax="true"
-              rel="nofollow">
-              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
-              <span class="select-menu-item-text css-truncate-target" title="v1.2">
-                v1.2
-              </span>
-            </a>
-            <a class="select-menu-item js-navigation-item js-navigation-open "
-              href="/osm2vectortiles/osm2vectortiles/tree/v1.1/src/import-external/states.geojson"
-              data-name="v1.1"
-              data-skip-pjax="true"
-              rel="nofollow">
-              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
-              <span class="select-menu-item-text css-truncate-target" title="v1.1">
-                v1.1
-              </span>
-            </a>
-            <a class="select-menu-item js-navigation-item js-navigation-open "
-              href="/osm2vectortiles/osm2vectortiles/tree/v1.0/src/import-external/states.geojson"
-              data-name="v1.0"
-              data-skip-pjax="true"
-              rel="nofollow">
-              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
-              <span class="select-menu-item-text css-truncate-target" title="v1.0">
-                v1.0
-              </span>
-            </a>
-            <a class="select-menu-item js-navigation-item js-navigation-open "
-              href="/osm2vectortiles/osm2vectortiles/tree/v0.2/src/import-external/states.geojson"
-              data-name="v0.2"
-              data-skip-pjax="true"
-              rel="nofollow">
-              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
-              <span class="select-menu-item-text css-truncate-target" title="v0.2">
-                v0.2
-              </span>
-            </a>
-            <a class="select-menu-item js-navigation-item js-navigation-open "
-              href="/osm2vectortiles/osm2vectortiles/tree/v0.1/src/import-external/states.geojson"
-              data-name="v0.1"
-              data-skip-pjax="true"
-              rel="nofollow">
-              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
-              <span class="select-menu-item-text css-truncate-target" title="v0.1">
-                v0.1
-              </span>
-            </a>
-            <a class="select-menu-item js-navigation-item js-navigation-open "
-              href="/osm2vectortiles/osm2vectortiles/tree/archive/point-optimization/src/import-external/states.geojson"
-              data-name="archive/point-optimization"
-              data-skip-pjax="true"
-              rel="nofollow">
-              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
-              <span class="select-menu-item-text css-truncate-target" title="archive/point-optimization">
-                archive/point-optimization
-              </span>
-            </a>
-            <a class="select-menu-item js-navigation-item js-navigation-open "
-              href="/osm2vectortiles/osm2vectortiles/tree/archive/linestring-optimization/src/import-external/states.geojson"
-              data-name="archive/linestring-optimization"
-              data-skip-pjax="true"
-              rel="nofollow">
-              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
-              <span class="select-menu-item-text css-truncate-target" title="archive/linestring-optimization">
-                archive/linestring-optimization
-              </span>
-            </a>
-            <a class="select-menu-item js-navigation-item js-navigation-open "
-              href="/osm2vectortiles/osm2vectortiles/tree/archive/c-extension/src/import-external/states.geojson"
-              data-name="archive/c-extension"
-              data-skip-pjax="true"
-              rel="nofollow">
-              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
-              <span class="select-menu-item-text css-truncate-target" title="archive/c-extension">
-                archive/c-extension
-              </span>
-            </a>
-            <a class="select-menu-item js-navigation-item js-navigation-open "
-              href="/osm2vectortiles/osm2vectortiles/tree/V1.1/src/import-external/states.geojson"
-              data-name="V1.1"
-              data-skip-pjax="true"
-              rel="nofollow">
-              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
-              <span class="select-menu-item-text css-truncate-target" title="V1.1">
-                V1.1
-              </span>
-            </a>
-        </div>
-
-        <div class="select-menu-no-results">Nothing to show</div>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-  <div class="btn-group right">
-    <a href="/osm2vectortiles/osm2vectortiles/find/master"
-          class="js-pjax-capture-input btn btn-sm"
-          data-pjax
-          data-hotkey="t">
-      Find file
-    </a>
-    <button aria-label="Copy file path to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button">Copy path</button>
-  </div>
-  <div class="breadcrumb js-zeroclipboard-target">
-    <span class="repo-root js-repo-root"><span class="js-path-segment"><a href="/osm2vectortiles/osm2vectortiles"><span>osm2vectortiles</span></a></span></span><span class="separator">/</span><span class="js-path-segment"><a href="/osm2vectortiles/osm2vectortiles/tree/master/src"><span>src</span></a></span><span class="separator">/</span><span class="js-path-segment"><a href="/osm2vectortiles/osm2vectortiles/tree/master/src/import-external"><span>import-external</span></a></span><span class="separator">/</span><strong class="final-path">states.geojson</strong>
-  </div>
-</div>
-
-<include-fragment class="commit-tease" src="/osm2vectortiles/osm2vectortiles/contributors/master/src/import-external/states.geojson">
-  <div>
-    Fetching contributors&hellip;
-  </div>
-
-  <div class="commit-tease-contributors">
-    <img alt="" class="loader-loading left" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32-EAF2F5.gif" width="16" />
-    <span class="loader-error">Cannot retrieve contributors at this time</span>
-  </div>
-</include-fragment>
-<div class="file">
-  <div class="file-header">
-  <div class="file-actions">
-      <div class="btn-group">
-        <a class="btn btn-sm tooltipped tooltipped tooltipped-n source "
-          href="/osm2vectortiles/osm2vectortiles/blob/master/src/import-external/states.geojson?short_path=a681890" aria-label="Display the source blob">
-          <svg aria-hidden="true" class="octicon octicon-code" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M9.5 3L8 4.5 11.5 8 8 11.5 9.5 13 14 8 9.5 3zm-5 0L0 8l4.5 5L6 11.5 2.5 8 6 4.5 4.5 3z"></path></svg>
-        </a>
-        <a class="btn btn-sm tooltipped tooltipped-n rendered selected"
-          href="/osm2vectortiles/osm2vectortiles/blob/master/src/import-external/states.geojson" aria-label="Display the rendered blob">
-          <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
-        </a>
-      </div>
-
-    <div class="btn-group">
-      <a href="/osm2vectortiles/osm2vectortiles/raw/master/src/import-external/states.geojson" class="btn btn-sm " id="raw-url">Raw</a>
-        <a href="/osm2vectortiles/osm2vectortiles/blame/master/src/import-external/states.geojson" class="btn btn-sm js-update-url-with-hash">Blame</a>
-      <a href="/osm2vectortiles/osm2vectortiles/commits/master/src/import-external/states.geojson" class="btn btn-sm " rel="nofollow">History</a>
-    </div>
-
-
-        <button type="button" class="btn-octicon disabled tooltipped tooltipped-nw"
-          aria-label="You must be signed in to make or propose changes">
-          <svg aria-hidden="true" class="octicon octicon-pencil" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M0 12v3h3l8-8-3-3-8 8zm3 2H1v-2h1v1h1v1zm10.3-9.3L12 6 9 3l1.3-1.3a.996.996 0 0 1 1.41 0l1.59 1.59c.39.39.39 1.02 0 1.41z"></path></svg>
-        </button>
-        <button type="button" class="btn-octicon btn-octicon-danger disabled tooltipped tooltipped-nw"
-          aria-label="You must be signed in to make or propose changes">
-          <svg aria-hidden="true" class="octicon octicon-trashcan" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M11 2H9c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1H2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1v9c0 .55.45 1 1 1h7c.55 0 1-.45 1-1V5c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm-1 12H3V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9zm1-10H2V3h9v1z"></path></svg>
-        </button>
-  </div>
-
-  <div class="file-info">
-      2555 lines (2555 sloc)
-      <span class="file-info-divider"></span>
-    56.4 KB
-  </div>
-</div>
-
-  
-
-  <div itemprop="text" class="blob-wrapper data type-json">
-      
-  <div class="render-wrapper">
-    <div class="render-container is-render-pending js-render-target "
-      data-identity="799a0766-7b7d-4020-b8cc-4015ab3d11a5"
-      data-host="https://render.githubusercontent.com"
-      data-type="geojson">
-      <img alt="" class="octospinner" height="64" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-128.gif" width="64" />
-      <div class="render-viewer-error">Sorry, something went wrong. <a href="https://github.com/osm2vectortiles/osm2vectortiles/blob/master/src/import-external/states.geojson">Reload?</a></div>
-      <div class="render-viewer-fatal">Sorry, we cannot display this file.</div>
-      <div class="render-viewer-invalid">Sorry, this file is invalid so it cannot be displayed.</div>
-      <iframe class="render-viewer" src="https://render.githubusercontent.com/view/geojson?commit=9090f93a838e52f358daf4c9e5b9ce48f2a7dbc1&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f6f736d32766563746f7274696c65732f6f736d32766563746f7274696c65732f393039306639336138333865353266333538646166346339653562396365343866326137646263312f7372632f696d706f72742d65787465726e616c2f7374617465732e67656f6a736f6e&amp;nwo=osm2vectortiles%2Fosm2vectortiles&amp;path=src%2Fimport-external%2Fstates.geojson&amp;repository_id=42047400#799a0766-7b7d-4020-b8cc-4015ab3d11a5" sandbox="allow-scripts allow-same-origin allow-top-navigation">Viewer requires iframe.</iframe>
-    </div>
-  </div>
-
-  </div>
-
-</div>
-
-<button type="button" data-facebox="#jump-to-line" data-facebox-class="linejump" data-hotkey="l" class="hidden">Jump to Line</button>
-<div id="jump-to-line" style="display:none">
-  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="" class="js-jump-to-line-form" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
-    <input class="form-control linejump-input js-jump-to-line-field" type="text" placeholder="Jump to line&hellip;" aria-label="Jump to line" autofocus>
-    <button type="submit" class="btn">Go</button>
-</form></div>
-
-  </div>
-  <div class="modal-backdrop js-touch-events"></div>
-</div>
-
-
-    </div>
-  </div>
-
-    </div>
-
-        <div class="container site-footer-container">
-  <div class="site-footer" role="contentinfo">
-    <ul class="site-footer-links right">
-        <li><a href="https://github.com/contact" data-ga-click="Footer, go to contact, text:contact">Contact GitHub</a></li>
-      <li><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
-      <li><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
-      <li><a href="https://shop.github.com" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
-        <li><a href="https://github.com/blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
-        <li><a href="https://github.com/about" data-ga-click="Footer, go to about, text:about">About</a></li>
-
-    </ul>
-
-    <a href="https://github.com" aria-label="Homepage" class="site-footer-mark" title="GitHub">
-      <svg aria-hidden="true" class="octicon octicon-mark-github" height="24" version="1.1" viewBox="0 0 16 16" width="24"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
-</a>
-    <ul class="site-footer-links">
-      <li>&copy; 2016 <span title="0.06856s from github-fe137-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
-        <li><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
-        <li><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
-        <li><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
-        <li><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
-        <li><a href="https://help.github.com" data-ga-click="Footer, go to help, text:help">Help</a></li>
-    </ul>
-  </div>
-</div>
-
-
-
-    
-
-    <div id="ajax-error-message" class="ajax-error-message flash flash-error">
-      <svg aria-hidden="true" class="octicon octicon-alert" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M8.865 1.52c-.18-.31-.51-.5-.87-.5s-.69.19-.87.5L.275 13.5c-.18.31-.18.69 0 1 .19.31.52.5.87.5h13.7c.36 0 .69-.19.86-.5.17-.31.18-.69.01-1L8.865 1.52zM8.995 13h-2v-2h2v2zm0-3h-2V6h2v4z"></path></svg>
-      <button type="button" class="flash-close js-flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
-        <svg aria-hidden="true" class="octicon octicon-x" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"></path></svg>
-      </button>
-      Something went wrong with that request. Please try again.
-    </div>
-
-
-      
-      <script crossorigin="anonymous" integrity="sha256-OGwyY6hrTwcbDxOgzzabz3Pe9Viq3p4c9rhx1O33ThE=" src="https://assets-cdn.github.com/assets/frameworks-386c3263a86b4f071b0f13a0cf369bcf73def558aade9e1cf6b871d4edf74e11.js"></script>
-      <script async="async" crossorigin="anonymous" integrity="sha256-EmDInr0weOofPy8lK08AaHiloCaC9THTBcR5mddjPi0=" src="https://assets-cdn.github.com/assets/github-1260c89ebd3078ea1f3f2f252b4f006878a5a02682f531d305c47999d7633e2d.js"></script>
-      
-      
-      
-      
-      
-      
-    <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner hidden">
-      <svg aria-hidden="true" class="octicon octicon-alert" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M8.865 1.52c-.18-.31-.51-.5-.87-.5s-.69.19-.87.5L.275 13.5c-.18.31-.18.69 0 1 .19.31.52.5.87.5h13.7c.36 0 .69-.19.86-.5.17-.31.18-.69.01-1L8.865 1.52zM8.995 13h-2v-2h2v2zm0-3h-2V6h2v4z"></path></svg>
-      <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
-      <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
-    </div>
-    <div class="facebox" id="facebox" style="display:none;">
-  <div class="facebox-popup">
-    <div class="facebox-content" role="dialog" aria-labelledby="facebox-header" aria-describedby="facebox-description">
-    </div>
-    <button type="button" class="facebox-close js-facebox-close" aria-label="Close modal">
-      <svg aria-hidden="true" class="octicon octicon-x" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"></path></svg>
-    </button>
-  </div>
-</div>
-
-  </body>
-</html>
-
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 474582475,
+        "area_sqkm": 1717854,
+        "abbr": "Alas.",
+        "ref": "AK",
+        "name": "Alaska",
+        "name_en": "Alaska",
+        "name_de": "Alaska",
+        "name_fr": "Alaska",
+        "name_es": "Alaska",
+        "name_zh": null,
+        "name_ru": "Аляска"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -149.680909,
+          64.4459613
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 2281482629,
+        "area_sqkm": 170304,
+        "abbr": "Fla.",
+        "ref": "FL",
+        "name": "Florida",
+        "name_en": "Florida",
+        "name_de": "Florida",
+        "name_fr": "Floride",
+        "name_es": "Florida",
+        "name_zh": "佛罗里达州",
+        "name_ru": "Флорида"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.4639835,
+          27.7567667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 671022,
+        "area_sqkm": 422102,
+        "abbr": "Calif.",
+        "ref": "CA",
+        "name": "California",
+        "name_en": "California",
+        "name_de": "Kalifornien",
+        "name_fr": "Californie",
+        "name_es": "California",
+        "name_zh": null,
+        "name_ru": "Калифорния"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.7559974,
+          36.7014631
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 34724864,
+        "area_sqkm": 225564,
+        "abbr": "Wash.",
+        "ref": "WA",
+        "name": "Washington",
+        "name_en": "Washington",
+        "name_de": null,
+        "name_fr": null,
+        "name_es": null,
+        "name_zh": null,
+        "name_ru": "Вашингтон"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.2126139,
+          47.2868352
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 244079544,
+        "area_sqkm": 492743,
+        "abbr": null,
+        "ref": "甘",
+        "name": "甘肃省",
+        "name_en": "Gansu Province",
+        "name_de": "Gansu",
+        "name_fr": "Gānsù",
+        "name_es": "Gansu",
+        "name_zh": "甘肃省",
+        "name_ru": "Ганьсу"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          101.9999999,
+          38.0000001
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 244080393,
+        "area_sqkm": 218220,
+        "abbr": null,
+        "ref": "贵",
+        "name": "贵州省",
+        "name_en": "Guizhou Province",
+        "name_de": "Guizhou",
+        "name_fr": "Guìzhoū",
+        "name_es": "Guizhou",
+        "name_zh": "贵州省",
+        "name_ru": "Гуйчжоу"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107,
+          27
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 244080442,
+        "area_sqkm": 330032,
+        "abbr": null,
+        "ref": "桂",
+        "name": "广西壮族自治区",
+        "name_en": "Guangxi Zhuang Autonomous Region",
+        "name_de": "Guangxi",
+        "name_fr": "Région autonome zhuang du Guangxi",
+        "name_es": "Guangxi",
+        "name_zh": "广西壮族自治区",
+        "name_ru": "Гуанси-Чжуанский автономный район"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          109,
+          24
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 244080467,
+        "area_sqkm": 270756,
+        "abbr": null,
+        "ref": "冀",
+        "name": "河北省",
+        "name_en": "Hebei Province",
+        "name_de": "Hebei",
+        "name_fr": "Héběi",
+        "name_es": "Hebei",
+        "name_zh": "河北省",
+        "name_ru": "Хэбэй"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116,
+          39.0000001
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 244080473,
+        "area_sqkm": 532561,
+        "abbr": null,
+        "ref": "黑",
+        "name": "黑龙江省",
+        "name_en": "Heilongjiang Province",
+        "name_de": "Heilongjiang",
+        "name_fr": "Hēilóngjiāng",
+        "name_es": "Heilongjiang",
+        "name_zh": "黑龙江省",
+        "name_ru": "Хэйлунцзян"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.999992,
+          48.0000047
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 244080670,
+        "area_sqkm": 297453,
+        "abbr": null,
+        "ref": "湘",
+        "name": "湖南省",
+        "name_en": "Hunan Province",
+        "name_de": "Hunan",
+        "name_fr": "Húnán",
+        "name_es": "Hunan",
+        "name_zh": "湖南省",
+        "name_ru": "Хунань"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          112.009538,
+          27.9995878
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 244080735,
+        "area_sqkm": 162260,
+        "abbr": null,
+        "ref": "苏",
+        "name": "江苏省",
+        "name_en": "Jiangsu Province",
+        "name_de": "Jiāngsū",
+        "name_fr": "Jiāngsū",
+        "name_es": "Jiangsu",
+        "name_zh": "江苏省",
+        "name_ru": "Цзянсу"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.9999999,
+          33.0000001
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 244080890,
+        "area_sqkm": 223210,
+        "abbr": null,
+        "ref": "吉",
+        "name": "吉林省",
+        "name_en": "Jilin Province",
+        "name_de": "Jílín",
+        "name_fr": "Jílín",
+        "name_es": "Jilin",
+        "name_zh": "吉林省",
+        "name_ru": "Гирин"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          125.9816054,
+          42.9995032
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 244081110,
+        "area_sqkm": 245066,
+        "abbr": null,
+        "ref": "辽",
+        "name": "辽宁省",
+        "name_en": "Liaoning Province",
+        "name_de": "Liáoníng",
+        "name_fr": "Liáoníng",
+        "name_es": "Liaoning",
+        "name_zh": "辽宁省",
+        "name_ru": "Ляонин"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          122.9955469,
+          40.9975197
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 316940520,
+        "area_sqkm": 382839,
+        "abbr": "Ariz.",
+        "ref": "AZ",
+        "name": "Arizona",
+        "name_en": "Arizona",
+        "name_de": null,
+        "name_fr": null,
+        "name_es": null,
+        "name_zh": null,
+        "name_ru": "Аризона"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.7632755,
+          34.395342
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 316942960,
+        "area_sqkm": 155946,
+        "abbr": "Ark.",
+        "ref": "AR",
+        "name": "Arkansas",
+        "name_en": "Arkansas",
+        "name_de": null,
+        "name_fr": null,
+        "name_es": null,
+        "name_zh": null,
+        "name_ru": "Арканзас"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.4479108,
+          35.2048883
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 244081449,
+        "area_sqkm": 1246663,
+        "abbr": null,
+        "ref": "蒙",
+        "name": "内蒙古自治区 (ᠦᠪᠦᠷ ᠮᠣᠨᠭᠭᠣᠯ) (Өвөр Монгол)",
+        "name_en": "Inner Mongolia Autonomous Region",
+        "name_de": "Innere Mongolei",
+        "name_fr": "Région autonome de Mongolie-intérieure",
+        "name_es": "Mongolia Interior",
+        "name_zh": "内蒙古自治区",
+        "name_ru": "Внутренняя Монголия"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.3251664,
+          43.2443242
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 244081488,
+        "area_sqkm": 807676,
+        "abbr": null,
+        "ref": "青",
+        "name": "青海省 / Qinghai",
+        "name_en": "Qinghai Province",
+        "name_de": "Qinghai",
+        "name_fr": "Qīnghǎi",
+        "name_es": "Qinghai",
+        "name_zh": "青海省",
+        "name_ru": "Цинхай"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96,
+          36
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 244081643,
+        "area_sqkm": 192250,
+        "abbr": null,
+        "ref": "鲁",
+        "name": "山东省",
+        "name_en": "Shandong Province",
+        "name_de": "Shāndōng",
+        "name_fr": "Shāndōng",
+        "name_es": "Shandong",
+        "name_zh": "山东省",
+        "name_ru": "Шаньдун"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9999999,
+          36.0000001
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 244081852,
+        "area_sqkm": 555955,
+        "abbr": null,
+        "ref": "川",
+        "name": "四川省",
+        "name_en": "Sichuan Province",
+        "name_de": "Sichuan",
+        "name_fr": "Sìchuān",
+        "name_es": "Sichuan",
+        "name_zh": "四川省",
+        "name_ru": "Сычуань"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          102.4999999,
+          30.5000001
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 244082468,
+        "area_sqkm": 1249048,
+        "abbr": null,
+        "ref": "藏",
+        "name": "西藏自治区 (བོད་རང་སྐྱོང་ལྗོངས་)",
+        "name_en": "Tibet Autonomous Region",
+        "name_de": "Autonomes Gebiet Tibet",
+        "name_fr": "Région autonome du Tibet",
+        "name_es": "Región Autónoma del Tíbet",
+        "name_zh": "西藏自治区",
+        "name_ru": "Тибетский автономный район"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.9999998,
+          32.0000002
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 244082773,
+        "area_sqkm": 411435,
+        "abbr": null,
+        "ref": "云",
+        "name": "云南省",
+        "name_en": "Yunnan Province",
+        "name_de": "Yunnan",
+        "name_fr": "Yúnnán",
+        "name_es": "Yunnan",
+        "name_zh": "云南省",
+        "name_ru": "Юньнань"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          102,
+          25
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 304951004,
+        "area_sqkm": 833251,
+        "abbr": null,
+        "ref": "NSW",
+        "name": "New South Wales",
+        "name_en": null,
+        "name_de": "Neusüdwales",
+        "name_fr": "Nouvelle Galles du Sud",
+        "name_es": "Nueva Gales del Sur",
+        "name_zh": null,
+        "name_ru": "Новый Южный Уэльс"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          147.2869493,
+          -31.8759835
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 304951005,
+        "area_sqkm": 2621966,
+        "abbr": null,
+        "ref": "WA",
+        "name": "Western Australia",
+        "name_en": null,
+        "name_de": "Westaustralien",
+        "name_fr": "Australie occidentale",
+        "name_es": "Australia Occidental",
+        "name_zh": null,
+        "name_ru": "Западная Австралия"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0187246,
+          -25.2303005
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 304951006,
+        "area_sqkm": 1392809,
+        "abbr": null,
+        "ref": "NT",
+        "name": "Northern Territory",
+        "name_en": null,
+        "name_de": "Nordterritorium",
+        "name_fr": "Territoire du Nord",
+        "name_es": "Territorio del Norte",
+        "name_zh": null,
+        "name_ru": "Северная территория"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          133.2303375,
+          -19.8516101
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 304951007,
+        "area_sqkm": 1004301,
+        "abbr": null,
+        "ref": "SA",
+        "name": "South Australia",
+        "name_en": null,
+        "name_de": "Südaustralien",
+        "name_fr": "Australie méridionale",
+        "name_es": "Australia Meridional",
+        "name_zh": null,
+        "name_ru": "Южная Австралия"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.6301212,
+          -30.5343665
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 304951008,
+        "area_sqkm": 120141,
+        "abbr": null,
+        "ref": "TAS",
+        "name": "Tasmania",
+        "name_en": null,
+        "name_de": "Tasmanien",
+        "name_fr": "Tasmanie",
+        "name_es": "Tasmania",
+        "name_zh": null,
+        "name_ru": "Тасмания"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          146.6366887,
+          -42.035067
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 304951009,
+        "area_sqkm": 260231,
+        "abbr": null,
+        "ref": "VIC",
+        "name": "Victoria",
+        "name_en": null,
+        "name_de": null,
+        "name_fr": "Victoria",
+        "name_es": "Victoria",
+        "name_zh": null,
+        "name_ru": "Виктория"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.6780052,
+          -36.5986096
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 316945104,
+        "area_sqkm": 308081,
+        "abbr": "Colo.",
+        "ref": "CO",
+        "name": "Colorado",
+        "name_en": "Colorado",
+        "name_de": null,
+        "name_fr": null,
+        "name_es": null,
+        "name_zh": null,
+        "name_ru": "Колорадо"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.6077167,
+          38.7251776
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 316945353,
+        "area_sqkm": 96329,
+        "abbr": "Conn.",
+        "ref": "CT",
+        "name": "Connecticut",
+        "name_en": "Connecticut",
+        "name_de": null,
+        "name_fr": null,
+        "name_es": null,
+        "name_zh": null,
+        "name_ru": "Коннектикут"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.7342163,
+          41.6500201
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 305700696,
+        "area_sqkm": 1420722,
+        "abbr": null,
+        "ref": "NT",
+        "name": "Northwest Territories",
+        "name_en": "Northwest Territories",
+        "name_de": "Nordwest-Territorien",
+        "name_fr": "Territoires du Nord-Ouest",
+        "name_es": "Territorios del Noroeste",
+        "name_zh": null,
+        "name_ru": "Северо-Западные территории"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118,
+          65.0000004
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 305700699,
+        "area_sqkm": 1034237,
+        "abbr": null,
+        "ref": "BC",
+        "name": "British Columbia",
+        "name_en": "British Columbia",
+        "name_de": "Britisch-Kolumbien",
+        "name_fr": "Colombie-Britannique",
+        "name_es": "Columbia Británica",
+        "name_zh": "不列颠哥伦比亚",
+        "name_ru": "Британская Колумбия"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -125,
+          55
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 305700700,
+        "area_sqkm": 2130542,
+        "abbr": null,
+        "ref": "NU",
+        "name": "Nunavut",
+        "name_en": "Nunavut",
+        "name_de": null,
+        "name_fr": "Nunavut",
+        "name_es": null,
+        "name_zh": null,
+        "name_ru": "Нунавут"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90,
+          70.0000073
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 305700701,
+        "area_sqkm": 1531748,
+        "abbr": null,
+        "ref": "QC",
+        "name": "Québec",
+        "name_en": "Québec",
+        "name_de": null,
+        "name_fr": "Québec",
+        "name_es": null,
+        "name_zh": null,
+        "name_ru": "Квебек"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72,
+          54
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 305700702,
+        "area_sqkm": 1169669,
+        "abbr": null,
+        "ref": "ON",
+        "name": "Ontario",
+        "name_en": "Ontario",
+        "name_de": null,
+        "name_fr": "Ontario",
+        "name_es": null,
+        "name_zh": null,
+        "name_ru": "Онтарио"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.0000001,
+          50.0000002
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 305700703,
+        "area_sqkm": 757383,
+        "abbr": null,
+        "ref": "AB",
+        "name": "Alberta",
+        "name_en": "Alberta",
+        "name_de": null,
+        "name_fr": "Province d’ Alberta",
+        "name_es": null,
+        "name_zh": null,
+        "name_ru": "Альберта"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -114.9999999,
+          55
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 2648961820,
+        "area_sqkm": 651900,
+        "abbr": null,
+        "ref": "SK",
+        "name": "Saskatchewan",
+        "name_en": "Saskatchewan",
+        "name_de": "Saskatchewan",
+        "name_fr": "Saskatchewan",
+        "name_es": "Saskatchewan",
+        "name_zh": null,
+        "name_ru": "Саскачеван"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -106,
+          54
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 305700704,
+        "area_sqkm": 132167,
+        "abbr": null,
+        "ref": "NS",
+        "name": "Nova Scotia",
+        "name_en": "Nova Scotia",
+        "name_de": "Neuschottland",
+        "name_fr": "Nouvelle-Écosse",
+        "name_es": "Nueva Escocia",
+        "name_zh": null,
+        "name_ru": "Новая Шотландия"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.9999999,
+          45.0000002
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 305700705,
+        "area_sqkm": 686615,
+        "abbr": null,
+        "ref": "MB",
+        "name": "Manitoba",
+        "name_en": "Manitoba",
+        "name_de": null,
+        "name_fr": "Manitoba",
+        "name_es": null,
+        "name_zh": "马尼托巴",
+        "name_ru": "Манитоба"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.0000001,
+          55.0000001
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 305700706,
+        "area_sqkm": 483301,
+        "abbr": null,
+        "ref": "NL",
+        "name": "Newfoundland and Labrador",
+        "name_en": "Newfoundland and Labrador",
+        "name_de": "Neufundland und Labrador",
+        "name_fr": "Terre-Neuve-et-Labrador",
+        "name_es": "Terranova y Labrador",
+        "name_zh": null,
+        "name_ru": "Ньюфаундленд и Лабрадор"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -56.0000001,
+          52.0000002
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 305700707,
+        "area_sqkm": 544451,
+        "abbr": null,
+        "ref": "YT",
+        "name": "Yukon",
+        "name_en": "Yukon Territory",
+        "name_de": null,
+        "name_fr": "Territoire du Yukon",
+        "name_es": null,
+        "name_zh": null,
+        "name_ru": "Юкон"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -136.0000001,
+          63.0000001
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 316417213,
+        "area_sqkm": 55990,
+        "abbr": null,
+        "ref": null,
+        "name": "Haryāna",
+        "name_en": "Haryana",
+        "name_de": null,
+        "name_fr": null,
+        "name_es": null,
+        "name_zh": null,
+        "name_ru": "Харьяна"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76,
+          29
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 316647532,
+        "area_sqkm": 208490,
+        "abbr": "Ala.",
+        "ref": "AL",
+        "name": "Alabama",
+        "name_en": "Alabama",
+        "name_de": null,
+        "name_fr": null,
+        "name_es": null,
+        "name_zh": null,
+        "name_ru": "Алабама"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.8295337,
+          33.2588817
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 565543876,
+        "area_sqkm": 923013,
+        "abbr": "MT",
+        "ref": "MT",
+        "name": "Mato Grosso",
+        "name_en": null,
+        "name_de": null,
+        "name_fr": null,
+        "name_es": null,
+        "name_zh": null,
+        "name_ru": "Мату-Гросу"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -55.5716547,
+          -12.2115009
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 316945699,
+        "area_sqkm": 42910,
+        "abbr": "Del.",
+        "ref": "DE",
+        "name": "Delaware",
+        "name_en": "Delaware",
+        "name_de": null,
+        "name_fr": null,
+        "name_es": null,
+        "name_zh": null,
+        "name_ru": "Делавэр"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.4013315,
+          38.6920451
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 316949496,
+        "area_sqkm": 226259,
+        "abbr": "Ga.",
+        "ref": "GA",
+        "name": "Georgia",
+        "name_en": "Georgia",
+        "name_de": null,
+        "name_fr": "Géorgie",
+        "name_es": null,
+        "name_zh": null,
+        "name_ru": "Джорджия"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.1137366,
+          32.3293809
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 316949921,
+        "area_sqkm": 114226,
+        "abbr": "Hawaii",
+        "ref": "HI",
+        "name": "Hawaii",
+        "name_en": "Hawaii",
+        "name_de": null,
+        "name_fr": "Hawaï",
+        "name_es": "Hawái",
+        "name_zh": null,
+        "name_ru": "Гавайи"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -157.975203,
+          21.2160437
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 316950582,
+        "area_sqkm": 262069,
+        "abbr": "Idaho",
+        "ref": "ID",
+        "name": "Idaho",
+        "name_en": "Idaho",
+        "name_de": null,
+        "name_fr": null,
+        "name_es": null,
+        "name_zh": null,
+        "name_ru": "Айдахо"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -114.0154071,
+          43.6447642
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 316954434,
+        "area_sqkm": 131633,
+        "abbr": "Ind.",
+        "ref": "IN",
+        "name": "Indiana",
+        "name_en": "Indiana",
+        "name_de": null,
+        "name_fr": null,
+        "name_es": null,
+        "name_zh": null,
+        "name_ru": "Индиана"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.1746933,
+          40.3270127
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 316955537,
+        "area_sqkm": 229768,
+        "abbr": "Iowa",
+        "ref": "IA",
+        "name": "Iowa",
+        "name_en": "Iowa",
+        "name_de": null,
+        "name_fr": null,
+        "name_es": null,
+        "name_zh": null,
+        "name_ru": "Айова"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.3122705,
+          41.9216734
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 316956038,
+        "area_sqkm": 283188,
+        "abbr": "Kans.",
+        "ref": "KS",
+        "name": "Kansas",
+        "name_en": "Kansas",
+        "name_de": null,
+        "name_fr": null,
+        "name_es": null,
+        "name_zh": null,
+        "name_ru": "Канзас"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.5821872,
+          38.27312
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 316959037,
+        "area_sqkm": 202636,
+        "abbr": "Ky.",
+        "ref": "KY",
+        "name": "Kentucky",
+        "name_en": "Kentucky",
+        "name_de": null,
+        "name_fr": null,
+        "name_es": null,
+        "name_zh": null,
+        "name_ru": "Кентукки"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.1551411,
+          37.5726028
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 316961033,
+        "area_sqkm": 215307,
+        "abbr": "La.",
+        "ref": "LA",
+        "name": "Louisiana",
+        "name_en": "Louisiana",
+        "name_de": null,
+        "name_fr": "Louisiane",
+        "name_es": "Luisiana",
+        "name_zh": null,
+        "name_ru": "Луизиана"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.007126,
+          30.8703881
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 316961875,
+        "area_sqkm": 162164,
+        "abbr": "Maine",
+        "ref": "ME",
+        "name": "Maine",
+        "name_en": "Maine",
+        "name_de": null,
+        "name_fr": null,
+        "name_es": null,
+        "name_zh": null,
+        "name_ru": "Мэн"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.8590201,
+          45.709097
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 316964668,
+        "area_sqkm": 54342,
+        "abbr": "Md.",
+        "ref": null,
+        "name": "Maryland",
+        "name_en": "Maryland",
+        "name_de": null,
+        "name_fr": null,
+        "name_es": null,
+        "name_zh": null,
+        "name_ru": "Мэриленд"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9382069,
+          39.5162234
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 316965734,
+        "area_sqkm": 111216,
+        "abbr": "Mass.",
+        "ref": "MA",
+        "name": "Massachusetts",
+        "name_en": "Massachusetts",
+        "name_de": null,
+        "name_fr": null,
+        "name_es": null,
+        "name_zh": null,
+        "name_ru": "Массачусетс"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.032366,
+          42.3788774
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 316966612,
+        "area_sqkm": 272805,
+        "abbr": "Mich.",
+        "ref": "MI",
+        "name": "Michigan",
+        "name_en": "Michigan",
+        "name_de": null,
+        "name_fr": null,
+        "name_es": null,
+        "name_zh": null,
+        "name_ru": "Мичиган"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.6824346,
+          43.6211955
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 316967611,
+        "area_sqkm": 264374,
+        "abbr": "Minn.",
+        "ref": "MN",
+        "name": "Minnesota",
+        "name_en": "Minnesota",
+        "name_de": null,
+        "name_fr": null,
+        "name_es": null,
+        "name_zh": null,
+        "name_ru": "Миннесота"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.6113288,
+          45.9896587
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 316968897,
+        "area_sqkm": 165768,
+        "abbr": "Miss.",
+        "ref": "MS",
+        "name": "Mississippi",
+        "name_en": "Mississippi",
+        "name_de": null,
+        "name_fr": null,
+        "name_es": "Misisipi",
+        "name_zh": null,
+        "name_ru": "Миссисипи"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.7348497,
+          32.9715645
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 316970920,
+        "area_sqkm": 425470,
+        "abbr": "Mont.",
+        "ref": "MT",
+        "name": "Montana",
+        "name_en": "Montana",
+        "name_de": null,
+        "name_fr": "Montana",
+        "name_es": null,
+        "name_zh": null,
+        "name_ru": "Монтана"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -109.6387579,
+          47.3752671
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 316971452,
+        "area_sqkm": 267633,
+        "abbr": "Nebr.",
+        "ref": "NE",
+        "name": "Nebraska",
+        "name_en": "Nebraska",
+        "name_de": "Nebraska",
+        "name_fr": null,
+        "name_es": null,
+        "name_zh": null,
+        "name_ru": "Небраска"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.5873816,
+          41.7370229
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 316971669,
+        "area_sqkm": 312727,
+        "abbr": "Nev.",
+        "ref": "NV",
+        "name": "Nevada",
+        "name_en": "Nevada",
+        "name_de": null,
+        "name_fr": null,
+        "name_es": null,
+        "name_zh": null,
+        "name_ru": "Невада"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.8537227,
+          39.5158825
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 316971821,
+        "area_sqkm": 41737,
+        "abbr": "N.H.",
+        "ref": "NH",
+        "name": "New Hampshire",
+        "name_en": "New Hampshire",
+        "name_de": null,
+        "name_fr": null,
+        "name_es": "Nuevo Hampshire",
+        "name_zh": null,
+        "name_ru": "Нью-Гэмпшир"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.6553992,
+          43.4849133
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 316973311,
+        "area_sqkm": 76444,
+        "abbr": "N.J.",
+        "ref": "NJ",
+        "name": "New Jersey",
+        "name_en": "New Jersey",
+        "name_de": null,
+        "name_fr": null,
+        "name_es": "Nueva Jersey",
+        "name_zh": null,
+        "name_ru": "Нью-Джерси"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.4041622,
+          40.0757384
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 316973967,
+        "area_sqkm": 382908,
+        "abbr": "N.M.",
+        "ref": "NM",
+        "name": "New Mexico",
+        "name_en": "New Mexico",
+        "name_de": "Neumexiko",
+        "name_fr": "Nouveau Mexique",
+        "name_es": "Nuevo México",
+        "name_zh": null,
+        "name_ru": "Нью-Мексико"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.993007,
+          34.5708167
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 316976734,
+        "area_sqkm": 164420,
+        "abbr": "N.Y.",
+        "ref": "NY",
+        "name": "New York",
+        "name_en": "New York",
+        "name_de": null,
+        "name_fr": null,
+        "name_es": "Nueva York",
+        "name_zh": null,
+        "name_ru": "Нью-Йорк"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.8449946,
+          43.1561681
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 316979074,
+        "area_sqkm": 177565,
+        "abbr": "N.C.",
+        "ref": "NC",
+        "name": "North Carolina",
+        "name_en": "North Carolina",
+        "name_de": "Nord-Carolina",
+        "name_fr": "Caroline du Nord",
+        "name_es": "Carolina del Norte",
+        "name_zh": null,
+        "name_ru": "Северная Каролина"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.0392919,
+          35.6729639
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 316979718,
+        "area_sqkm": 243646,
+        "abbr": "N.D.",
+        "ref": "ND",
+        "name": "North Dakota",
+        "name_en": "North Dakota",
+        "name_de": "Nord-Dakota",
+        "name_fr": "Dakota du Nord",
+        "name_es": "Dakota del Norte",
+        "name_zh": null,
+        "name_ru": "Северная Дакота"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -100.540737,
+          47.6201461
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 316982774,
+        "area_sqkm": 210832,
+        "abbr": "Ohio",
+        "ref": "OH",
+        "name": "Ohio",
+        "name_en": "Ohio",
+        "name_de": null,
+        "name_fr": null,
+        "name_es": null,
+        "name_zh": null,
+        "name_ru": "Огайо"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.6881395,
+          40.2253569
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 316983705,
+        "area_sqkm": 253345,
+        "abbr": "Okla.",
+        "ref": "OK",
+        "name": "Oklahoma",
+        "name_en": "Oklahoma",
+        "name_de": null,
+        "name_fr": null,
+        "name_es": null,
+        "name_zh": null,
+        "name_ru": "Оклахома"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.2684063,
+          34.9550817
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 316984338,
+        "area_sqkm": 300279,
+        "abbr": "Ore.",
+        "ref": "OR",
+        "name": "Oregon",
+        "name_en": "Oregon",
+        "name_de": null,
+        "name_fr": null,
+        "name_es": "Oregón",
+        "name_zh": null,
+        "name_ru": "Орегон"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.737257,
+          43.9792797
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 565545457,
+        "area_sqkm": 333784,
+        "abbr": "TO",
+        "ref": "TO",
+        "name": "Tocantins",
+        "name_en": null,
+        "name_de": null,
+        "name_fr": null,
+        "name_es": null,
+        "name_zh": null,
+        "name_ru": "Токантинс"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.3716912,
+          -10.8855129
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 316987717,
+        "area_sqkm": 193810,
+        "abbr": "Pa.",
+        "ref": "PA",
+        "name": "Pennsylvania",
+        "name_en": "Pennsylvania",
+        "name_de": "Pennsylvanien",
+        "name_fr": "Pennsylvanie",
+        "name_es": "Pensilvania",
+        "name_zh": null,
+        "name_ru": "Пенсильвания"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.7278831,
+          40.9699889
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 316987977,
+        "area_sqkm": 25583,
+        "abbr": "R.I.",
+        "ref": "RI",
+        "name": "Rhode Island",
+        "name_en": "Rhode Island",
+        "name_de": null,
+        "name_fr": null,
+        "name_es": null,
+        "name_zh": null,
+        "name_ru": "Род-Айленд"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.5992372,
+          41.7962409
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 316990225,
+        "area_sqkm": 144797,
+        "abbr": "S.C.",
+        "ref": "SC",
+        "name": "South Carolina",
+        "name_en": "South Carolina",
+        "name_de": "Süd-Carolina",
+        "name_fr": "Caroline du Sud",
+        "name_es": "Carolina del Sur",
+        "name_zh": null,
+        "name_ru": "Южная Каролина"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.4363743,
+          33.6874388
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 316990807,
+        "area_sqkm": 210708,
+        "abbr": "S.D.",
+        "ref": "SD",
+        "name": "South Dakota",
+        "name_en": "South Dakota",
+        "name_de": "Süd-Dakota",
+        "name_fr": "Dakota du Sud",
+        "name_es": "Dakota del Sur",
+        "name_zh": null,
+        "name_ru": "Южная Дакота"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -100.348761,
+          44.6471761
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 316994008,
+        "area_sqkm": 195442,
+        "abbr": "Tenn.",
+        "ref": "TN",
+        "name": "Tennessee",
+        "name_en": "Tennessee",
+        "name_de": null,
+        "name_fr": null,
+        "name_es": null,
+        "name_zh": null,
+        "name_ru": "Теннесси"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.2820081,
+          35.7730076
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 316998356,
+        "area_sqkm": 747458,
+        "abbr": "Tex.",
+        "ref": "TX",
+        "name": "Texas",
+        "name_en": "Texas",
+        "name_de": null,
+        "name_fr": null,
+        "name_es": null,
+        "name_zh": null,
+        "name_ru": "Техас"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.5120986,
+          31.8160381
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 316999551,
+        "area_sqkm": 267829,
+        "abbr": "Utah",
+        "ref": "UT",
+        "name": "Utah",
+        "name_en": "Utah",
+        "name_de": null,
+        "name_fr": null,
+        "name_es": null,
+        "name_zh": null,
+        "name_ru": "Юта"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.7143584,
+          39.4225192
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 317000170,
+        "area_sqkm": 48427,
+        "abbr": "Vt.",
+        "ref": "VT",
+        "name": "Vermont",
+        "name_en": "Vermont",
+        "name_de": null,
+        "name_fr": null,
+        "name_es": null,
+        "name_zh": null,
+        "name_ru": "Вермонт"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.5002608,
+          44.5990718
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 317004702,
+        "area_sqkm": 150286,
+        "abbr": "Va.",
+        "ref": "VA",
+        "name": "Virginia",
+        "name_en": "Virginia",
+        "name_de": null,
+        "name_fr": "Virginie",
+        "name_es": null,
+        "name_zh": null,
+        "name_ru": "Виргиния"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.4927721,
+          37.1232245
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 317006365,
+        "area_sqkm": 81945,
+        "abbr": "W.Va.",
+        "ref": "WV",
+        "name": "West Virginia",
+        "name_en": "West Virginia",
+        "name_de": null,
+        "name_fr": "Virginie Occidentale",
+        "name_es": "Virginia Occidental",
+        "name_zh": null,
+        "name_ru": "Западная Виргиния"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.8408415,
+          38.4758406
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 317007239,
+        "area_sqkm": 191379,
+        "abbr": "Wis.",
+        "ref": "WI",
+        "name": "Wisconsin",
+        "name_en": "Wisconsin",
+        "name_de": null,
+        "name_fr": null,
+        "name_es": null,
+        "name_zh": null,
+        "name_ru": "Висконсин"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.6884637,
+          44.4308975
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 317007393,
+        "area_sqkm": 297699,
+        "abbr": "Wyo.",
+        "ref": "WY",
+        "name": "Wyoming",
+        "name_en": "Wyoming",
+        "name_de": null,
+        "name_fr": null,
+        "name_es": null,
+        "name_zh": null,
+        "name_ru": "Вайоминг"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -107.5685348,
+          43.1700264
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 470649732,
+        "area_sqkm": 166176,
+        "abbr": "SCO",
+        "ref": "SCO",
+        "name": "Scotland",
+        "name_en": null,
+        "name_de": "Schottland",
+        "name_fr": "Écosse",
+        "name_es": "Escocia",
+        "name_zh": null,
+        "name_ru": "Шотландия"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.1140518,
+          56.7861112
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 473849775,
+        "area_sqkm": 222509,
+        "abbr": "Mo.",
+        "ref": "MO",
+        "name": "Missouri",
+        "name_en": "Missouri",
+        "name_de": null,
+        "name_fr": null,
+        "name_es": "Misuri",
+        "name_zh": null,
+        "name_ru": "Миссури"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.5617875,
+          38.7604815
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 502334045,
+        "area_sqkm": 619620,
+        "abbr": "MG",
+        "ref": "MG",
+        "name": "Minas Gerais",
+        "name_en": null,
+        "name_de": null,
+        "name_fr": null,
+        "name_es": null,
+        "name_zh": null,
+        "name_ru": "Минас-Жерайс"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -44.1588654,
+          -18.5264844
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 504798993,
+        "area_sqkm": 259187,
+        "abbr": "SP",
+        "ref": "SP",
+        "name": "São Paulo",
+        "name_en": null,
+        "name_de": null,
+        "name_fr": "São Paulo",
+        "name_es": null,
+        "name_zh": null,
+        "name_ru": "Сан-Паулу"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.0232348,
+          -21.9549806
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 504799970,
+        "area_sqkm": 114655,
+        "abbr": "RJ",
+        "ref": "RJ",
+        "name": "Rio de Janeiro",
+        "name_en": null,
+        "name_de": null,
+        "name_fr": null,
+        "name_es": null,
+        "name_zh": null,
+        "name_ru": "Рио-де-Жанейро"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -42.419415,
+          -22.2752762
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 504800252,
+        "area_sqkm": 337534,
+        "abbr": "RS",
+        "ref": "RS",
+        "name": "Rio Grande do Sul",
+        "name_en": null,
+        "name_de": null,
+        "name_fr": null,
+        "name_es": null,
+        "name_zh": null,
+        "name_ru": "Южный Риу-Гранди"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -53.767225,
+          -29.8518
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 539668890,
+        "area_sqkm": 140699,
+        "abbr": "SC",
+        "ref": "SC",
+        "name": "Santa Catarina",
+        "name_en": null,
+        "name_de": null,
+        "name_fr": null,
+        "name_es": null,
+        "name_zh": null,
+        "name_ru": "Санта-Катарина"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -51.114965,
+          -27.0628367
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 539672077,
+        "area_sqkm": 236704,
+        "abbr": "PR",
+        "ref": "PR",
+        "name": "Paraná",
+        "name_en": null,
+        "name_de": null,
+        "name_fr": null,
+        "name_es": null,
+        "name_zh": null,
+        "name_ru": "Парана"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -51.8148872,
+          -24.4842187
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 539676406,
+        "area_sqkm": 1310196,
+        "abbr": "PA",
+        "ref": "PA",
+        "name": "Pará",
+        "name_en": null,
+        "name_de": null,
+        "name_fr": null,
+        "name_es": null,
+        "name_zh": null,
+        "name_ru": "Пара"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -52.8973006,
+          -4.7493933
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 539680936,
+        "area_sqkm": 192384,
+        "abbr": "AP",
+        "ref": "AP",
+        "name": "Amapá",
+        "name_en": null,
+        "name_de": null,
+        "name_fr": null,
+        "name_es": null,
+        "name_zh": null,
+        "name_ru": "Амапа"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -51.9161977,
+          1.3545442
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 539689822,
+        "area_sqkm": 309589,
+        "abbr": "RR",
+        "ref": "RR",
+        "name": "Roraima",
+        "name_en": null,
+        "name_de": null,
+        "name_fr": null,
+        "name_es": null,
+        "name_zh": null,
+        "name_ru": "Рорайма"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.3631922,
+          2.135138
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 539691270,
+        "area_sqkm": 608596,
+        "abbr": "BA",
+        "ref": "BA",
+        "name": "Bahia",
+        "name_en": null,
+        "name_de": null,
+        "name_fr": null,
+        "name_es": null,
+        "name_zh": null,
+        "name_ru": "Баия"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -41.9294776,
+          -12.285251
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 539693378,
+        "area_sqkm": 426741,
+        "abbr": "MS",
+        "ref": "MS",
+        "name": "Mato Grosso do Sul",
+        "name_en": null,
+        "name_de": null,
+        "name_fr": null,
+        "name_es": "Mato Grosso del Sur",
+        "name_zh": "南马托格罗索州",
+        "name_ru": "Мату-Гросу-ду-Сул"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -54.4794731,
+          -19.5852564
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 539830692,
+        "area_sqkm": 90046,
+        "abbr": "PB",
+        "ref": "PB",
+        "name": "Paraíba",
+        "name_en": null,
+        "name_de": null,
+        "name_fr": null,
+        "name_es": null,
+        "name_zh": null,
+        "name_ru": "Параиба"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -36.972191,
+          -7.1168306
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 539830860,
+        "area_sqkm": 63004,
+        "abbr": "RN",
+        "ref": "RN",
+        "name": "Rio Grande do Norte",
+        "name_en": null,
+        "name_de": null,
+        "name_fr": null,
+        "name_es": null,
+        "name_zh": null,
+        "name_ru": "Северный Риу-Гранде"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -36.4781776,
+          -5.6781175
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 539831949,
+        "area_sqkm": 162925,
+        "abbr": "PE",
+        "ref": "PE",
+        "name": "Pernambuco",
+        "name_en": null,
+        "name_de": null,
+        "name_fr": "Pernambouc",
+        "name_es": null,
+        "name_zh": null,
+        "name_ru": "Пернамбуку"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.3087923,
+          -8.4127483
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 539832191,
+        "area_sqkm": 246469,
+        "abbr": "CE",
+        "ref": "CE",
+        "name": "Ceará",
+        "name_en": null,
+        "name_de": null,
+        "name_fr": null,
+        "name_es": null,
+        "name_zh": null,
+        "name_ru": "Сеара"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -39.7156073,
+          -5.3264703
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 541425925,
+        "area_sqkm": 300692,
+        "abbr": "PI",
+        "ref": "PI",
+        "name": "Piauí",
+        "name_en": null,
+        "name_de": null,
+        "name_fr": null,
+        "name_es": null,
+        "name_zh": null,
+        "name_ru": "Пиауи"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.3568099,
+          -7.8739842
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 541426952,
+        "area_sqkm": 345762,
+        "abbr": "MA",
+        "ref": "MA",
+        "name": "Maranhão",
+        "name_en": null,
+        "name_de": null,
+        "name_fr": null,
+        "name_es": null,
+        "name_zh": null,
+        "name_ru": "Мараньян"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.3930262,
+          -5.2085503
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 541429445,
+        "area_sqkm": 98344,
+        "abbr": "AL",
+        "ref": "AL",
+        "name": "Alagoas",
+        "name_en": null,
+        "name_de": null,
+        "name_fr": null,
+        "name_es": null,
+        "name_zh": null,
+        "name_ru": "Алагоас"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -36.6489727,
+          -9.7081218
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 541429632,
+        "area_sqkm": 83209,
+        "abbr": "SE",
+        "ref": "SE",
+        "name": "Sergipe",
+        "name_en": null,
+        "name_de": null,
+        "name_fr": null,
+        "name_es": null,
+        "name_zh": null,
+        "name_ru": "Сержипи"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -37.3773519,
+          -10.6743911
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 553784069,
+        "area_sqkm": 224822,
+        "abbr": "Il.",
+        "ref": "IL",
+        "name": "Illinois",
+        "name_en": "Illinois",
+        "name_de": null,
+        "name_fr": null,
+        "name_es": null,
+        "name_zh": null,
+        "name_ru": "Иллинойс"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.4339809,
+          40.0796319
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 565543192,
+        "area_sqkm": 310759,
+        "abbr": "RO",
+        "ref": "RO",
+        "name": "Rondônia",
+        "name_en": null,
+        "name_de": null,
+        "name_fr": null,
+        "name_es": null,
+        "name_zh": null,
+        "name_ru": "Рондония"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.390871,
+          -10.7375836
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 1756225709,
+        "area_sqkm": 53869,
+        "abbr": null,
+        "ref": "PE",
+        "name": "Prince Edward Island",
+        "name_en": "Prince Edward Island",
+        "name_de": "Prinz-Edward-Insel",
+        "name_fr": "Île-du-Prince-Édouard",
+        "name_es": "Isla del Príncipe Eduardo",
+        "name_zh": null,
+        "name_ru": "Остров Принца Эдуарда"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -63.45941,
+          46.3202067
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 1971329414,
+        "area_sqkm": 1766933,
+        "abbr": null,
+        "ref": "QLD",
+        "name": "Queensland",
+        "name_en": null,
+        "name_de": null,
+        "name_fr": null,
+        "name_es": null,
+        "name_zh": "昆士兰",
+        "name_ru": "Квинсленд"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.4588889,
+          -21.9182856
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "England",
+        "abbr": "Eng.",
+        "area_sqkm": 150215,
+        "name_de": "England",
+        "name_en": "England",
+        "name_es": "Inglaterra",
+        "name_fr": "Angleterre",
+        "name_ru": "Англия",
+        "name_zh": "英格兰",
+        "osm_id": 0,
+        "ref": "EN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3515625,
+          52.214338608258196
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Wales",
+        "abbr": "Wales",
+        "area_sqkm": 25219,
+        "name_de": "Wales",
+        "name_en": "Wales",
+        "name_es": "Gales",
+        "name_fr": "Pays de Galles",
+        "name_ru": "Уэльс",
+        "name_zh": "威尔士",
+        "osm_id": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.955078125,
+          52.16045455774706
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Northern Ireland",
+        "osm_id": 0,
+        "abbr": "N. Ire.",
+        "name_en": "Northern Ireland",
+        "name_es": "Irlanda del Norte",
+        "name_fr": "Irlande du Nord",
+        "name_ru": "Северная Ирландия",
+        "name_zh": "北爱尔",
+        "area_sqkm": 13013
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.03125,
+          54.57206165565852
+        ]
+      }
+    }
+  ]
+}

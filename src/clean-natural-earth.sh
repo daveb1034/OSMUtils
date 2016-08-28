@@ -134,7 +134,10 @@ function clean_natural_earth() {
     drop_table 'ne_50m_rivers_lake_centerlines_scale_rank'
     drop_table 'ne_50m_urban_areas'
 
-    echo "VACUUM;" | sqlite3 "natural_earth_vector.sqlite"
+    #echo "VACUUM;" | sqlite3 "natural_earth_vector.sqlite"
 }
-
+echo "cleaning natural earth data by removing unwanted tables"
 clean_natural_earth
+
+echo "executing VACUUM on sqlite db"
+sqlite3 natural_earth_vector.sqlite "VACUUM;"
