@@ -80,7 +80,7 @@ export PATH=$PATH:$HOME/bin
 ```
 cd ~/src
 git clone https://github.com/daveb1034/OSMUtils.git
-cd OSMUtils
+cd OSMUtils/src
 ```
 
 ## Import External Data
