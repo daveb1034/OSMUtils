@@ -101,3 +101,13 @@ This will potentially be altered in future to use 4326 and possibly 3395.
 ```
 ./import.sh
 ```
+
+## Import OSM Data
+
+This process uses a modified version of the osm2vectortiles import osm.
+The ref to pbf_timestamp is removed from the osm2vectortiles process and requires
+modifcation of the reference to timestamp field in all the tables.
+
+This is a custom implementation of imposm3 data by osm2vectortiles and is used to render 
+updated tiles using diff.
+We will do something different.
