@@ -121,4 +121,9 @@ cd ../import-osm
 ## Import sql
 
 This scetion imports custom SQL functions used in the generation of vector tiles and is modified from the osm2vectortiles process.
-All reference to timestamps has been removed as diffs will be implemented differently.
+
+```
+cd ../import-sql
+./prepare.sh
+```
+
