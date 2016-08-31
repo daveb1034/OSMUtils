@@ -27,12 +27,12 @@ function exec_sql_file() {
 
 function main() {
     echo "Creating functions in $OSM_DB"
-    exec_sql_file "$SQL_FUNCTIONS_FILE"
-    exec_sql_file "$SQL_XYZ_EXTENT_FILE"
+    exec_sql_file "functions.sql"
+    exec_sql_file "xyz_extent.sql"
     echo "Creating generated functions in $OSM_DB"
-    exec_sql_file "$SQL_GENERATED_FILE"
+    exec_sql_file "gen.sql"
     echo "Creating triggers in $OSM_DB"
-    exec_sql_file "$SQL_TRIGGERS_FILE"
+    exec_sql_file "triggers.sql"
     echo "Creating layers in $OSM_DB"
     exec_sql_file "${SQL_LAYERS_DIR}admin.sql"
     exec_sql_file "${SQL_LAYERS_DIR}aeroway.sql"
