@@ -12,7 +12,7 @@ set -o nounset
 
 function drop_table() {
     local table_name="$1"
-    echo "DROP TABLE $table_name;" | sqlite3 "natural_earth_vector.sqlite"
+    echo "DROP TABLE $table_name;" | sqlite3 "../../Data/natural_earth_vector.sqlite"
     echo "DELETE FROM geometry_columns WHERE f_table_name = '$table_name';" \
          | sqlite3 "natural_earth_vector.sqlite"
 }

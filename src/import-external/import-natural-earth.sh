@@ -21,7 +21,7 @@ function import_natural_earth() {
     -lco DIM=2 \
     -nlt GEOMETRY \
     -overwrite \
-    "./natural_earth_vector.sqlite"
+    "../../Data/natural_earth_vector.sqlite"
 }
 
 import_natural_earth

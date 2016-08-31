@@ -99,6 +99,7 @@ All data is loaded into the public schema of the postgis database in EPSG:3857 b
 This will potentially be altered in future to use 4326 and possibly 3395.
 
 ```
+cd import-external
 ./import.sh
 ```
 
