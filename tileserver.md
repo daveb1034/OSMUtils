@@ -105,10 +105,15 @@ cd import-external
 
 ## Import OSM Data
 
-This process uses a modified version of the osm2vectortiles import osm.
-The ref to pbf_timestamp is removed from the osm2vectortiles process and requires
-modifcation of the reference to timestamp field in all the tables.
+To import your data into postgis carry out the following. The script looks for data in the Data directory and will import the first pbf file it finds. The import is handled by
+imposm3 and it requires write access to the cache directory. To set this modify the following line in import.sh
 
-This is a custom implementation of imposm3 data by osm2vectortiles and is used to render 
-updated tiles using diff.
-We will do something different.
+```
+readonly IMPOSM_CACHE_DIR=${IMPOSM_CACHE_DIR:-../../Data/cache} # change ../../Data/cache to your desired location
+```
+For maximum performance it is recommended to have the cache sit on an SSD with at 100GB of free space if you intend to load the planet. If there is insufficient space imposm3 will fail.
+
+```
+cd ../import-osm
+./import-pbf.sh
+```
