@@ -117,3 +117,8 @@ For maximum performance it is recommended to have the cache sit on an SSD with a
 cd ../import-osm
 ./import-pbf.sh
 ```
+
+## Import sql
+
+This scetion imports custom SQL functions used in the generation of vector tiles and is modified from the osm2vectortiles process.
+All reference to timestamps has been removed as diffs will be implemented differently.
