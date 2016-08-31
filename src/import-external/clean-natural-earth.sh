@@ -14,7 +14,7 @@ function drop_table() {
     local table_name="$1"
     echo "DROP TABLE $table_name;" | sqlite3 "../../Data/natural_earth_vector.sqlite"
     echo "DELETE FROM geometry_columns WHERE f_table_name = '$table_name';" \
-         | sqlite3 "natural_earth_vector.sqlite"
+         | sqlite3 "../../Data/natural_earth_vector.sqlite"
 }
 
 function clean_natural_earth() {
@@ -140,4 +140,4 @@ echo "cleaning natural earth data by removing unwanted tables"
 clean_natural_earth
 
 echo "executing VACUUM on sqlite db"
-sqlite3 natural_earth_vector.sqlite "VACUUM;"
+sqlite3 ../../Data/natural_earth_vector.sqlite "VACUUM;"
