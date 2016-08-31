@@ -4,7 +4,7 @@ set -o pipefail
 set -o nounset
 
 readonly SQL_FUNCTIONS_FILE=${IMPORT_DATA_DIR:-functions.sql}
-readonly SQL_LAYERS_DIR=${IMPORT_DATA_DIR:-layers}
+readonly SQL_LAYERS_DIR=${IMPORT_DATA_DIR:-layers/}
 readonly SQL_CREATE_INDIZES=${SQL_CREATE_INDIZES:-false}
 readonly SQL_SPLIT_POLYGON_FILE=${SQL_SPLIT_POLYGON_FILE:-landuse_split_polygon_table.sql}
 readonly SQL_SUBDIVIDE_POLYGON_FILE=${SQL_SUBDIVIDE_POLYGON_FILE:-../import-osm/subdivide_polygons.sql}
